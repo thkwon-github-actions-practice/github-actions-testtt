@@ -1,2 +1,2 @@
 # Academic Conference 2024 Members
-2024/taehyoung/* @thkwon1 @TaeHyoungKwon
+2024/*/taehyoung/* @thkwon1 @TaeHyoungKwon
