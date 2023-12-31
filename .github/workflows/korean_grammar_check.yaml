@@ -1,4 +1,4 @@
-name: 한국어 맞춤법 체크
+name: Check-Korean-Grammar
 
 on:
   push:
@@ -6,10 +6,12 @@ on:
       - "*"
 
 jobs:
-  build:
+  Check-Korean-Grammar:
     runs-on: ubuntu-latest
     steps:
-    - name: "맞춤법 검사"
-      uses: jckdotim/korean-grammar-action@v0.2.6
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Grammar Check
+        uses: Kangdyu/korean-grammar-check-action@v1
+        with:
+          check: "updated"
