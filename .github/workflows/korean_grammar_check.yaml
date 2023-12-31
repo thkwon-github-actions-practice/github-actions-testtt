@@ -1,17 +1,12 @@
-name: Check-Korean-Grammar
+name: CI
 
-on:
-  push:
-    branches:
-      - "*"
+on: [pull_request]
 
 jobs:
-  Check-Korean-Grammar:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Grammar Check
-        uses: Kangdyu/korean-grammar-check-action@v1
-        with:
-          check: "updated"
+    - name: "맞춤법 검사"
+      uses: TaeHyoungKwon/korean-grammar-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
