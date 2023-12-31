@@ -43,5 +43,5 @@ jobs:
     steps:
       - uses: JoseThen/comment-pr@v1.2.0
         with:
-          comment: "적절한 Projects, Milestone, Development를 할당 해주세요~! :bow:"
+          comment: "우측에 있는 `Projects`, `Milestone`, `Development`를 확인 후 할당 해주세요~! :bow:"
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
