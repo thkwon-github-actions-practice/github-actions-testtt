@@ -32,9 +32,8 @@ jobs:
 
   assign-milestone:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: zoispag/action-assign-milestone@v1
+      - uses: andrefcdias/add-to-milestone
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          milestone: 'roadmap2'
+          milestone: "프로그래밍 심리학"
