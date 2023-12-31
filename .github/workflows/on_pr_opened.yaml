@@ -30,11 +30,11 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
-  # assign-milestone:
-  #   runs-on: ubuntu-latest
+  assign-milestone:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - uses: zoispag/action-assign-milestone@v1
-  #       with:
-  #         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-  #         milestone: 'roadmap'
+    steps:
+      - uses: zoispag/action-assign-milestone@v1
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          milestone: '프로그래밍 심리학'
