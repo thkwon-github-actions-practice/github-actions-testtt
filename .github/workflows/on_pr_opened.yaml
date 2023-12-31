@@ -37,3 +37,14 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           milestone: "프로그래밍 심리학"
+
+  comment-for-filling-others:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: github-actions-up-and-running/pr-comment@v1.0.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        message: "적절한 Projects, Milestone, Development를 할당 해주세요~! :bow:"
+  
+  
+
