@@ -33,7 +33,4 @@ jobs:
   assign-milestone:
     runs-on: ubuntu-latest
     steps:
-      - uses: andrefcdias/add-to-milestone@main
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          milestone: "프로그래밍 심리학"
+      - uses: benelan/milestone-action@v2
