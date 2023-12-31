@@ -1,4 +1,4 @@
-name: 'On Pull Request Opened'
+name: "On Pull Request Opened"
 
 on:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ohnogumi/auto-reviewers@v0.0.5
         with:
-         token: "${{ secrets.GITHUB_TOKEN }}"
+          token: "${{ secrets.GITHUB_TOKEN }}"
 
   add-label:
     runs-on: ubuntu-latest
@@ -41,10 +41,7 @@ jobs:
   comment-for-filling-others:
     runs-on: ubuntu-latest
     steps:
-    - uses: github-actions-up-and-running/pr-comment@v1.0.0
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        message: "적절한 Projects, Milestone, Development를 할당 해주세요~! :bow:"
-  
-  
-
+      - uses: github-actions-up-and-running/pr-comment@v1.0.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          message: "적절한 Projects, Milestone, Development를 할당 해주세요~! :bow:"
