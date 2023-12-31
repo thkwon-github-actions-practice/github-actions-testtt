@@ -37,4 +37,4 @@ jobs:
       - uses: zoispag/action-assign-milestone@v1
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          milestone: '프로그래밍 심리학'
+          milestone: 'roadmap2'
