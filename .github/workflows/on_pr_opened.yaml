@@ -45,7 +45,7 @@ jobs:
         with:
           comment: "우측에 있는 `Projects`, `Milestone`, `Development`를 확인 후 할당 해주세요~! :bow:"
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-  assign-project:
+  assign-projec-and-milestone:
     runs-on: ubuntu-latest
     steps:
       - env:
