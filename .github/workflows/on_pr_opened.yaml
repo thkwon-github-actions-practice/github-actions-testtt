@@ -45,12 +45,12 @@ jobs:
         with:
           comment: "우측에 있는 `Projects`, `Milestone`, `Development`를 확인 후 할당 해주세요~! :bow:"
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-  assign-project:
+  assign-project-and-milestone:
     runs-on: ubuntu-latest
     steps:
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          gh pr edit $PR_URL --add-project "thkwon project"
+          gh pr edit $PR_URL --add-project "thkwon1 project"
           gh pr edit $PR_URL --milestone "프로그래밍 심리학"
