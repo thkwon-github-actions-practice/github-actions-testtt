@@ -47,6 +47,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
   assign-project-and-milestone:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
